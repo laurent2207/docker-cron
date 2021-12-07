@@ -8,6 +8,4 @@ RUN chmod 644 /etc/cron.d/crontab
 ADD script.sh /script.sh
 RUN chmod +x /script.sh
 
-RUN touch /var/log/cron.log
-
 CMD ["cron", "-f"]
